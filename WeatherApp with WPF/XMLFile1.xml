@@ -1,0 +1,22 @@
+﻿<Window x:Class="WeatherApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Weather App" Height="350" Width="525">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+		<Label Grid.Row="0" HorizontalAlignment="Center">City:</Label>
+		<TextBox x:Name="CityInput" Grid.Row="0" Grid.Column="1"/>
+		<Button x:Name="GetWeather" Grid.Row="1" Content="Get Weather" Click="GetWeather_Click"/>
+		<Label Grid.Row="2" Content="Temperature:"/>
+		<Label x:Name="Temperature" Grid.Row="2" Grid.Column="1"/>
+		<Label Grid.Row="3" Content="Description:"/>
+		<Label x:Name="Description" Grid.Row="3" Grid.Column="1"/>
+		<Label Grid.Row="4" Content="Location:"/>
+		<Label x:Name="Location" Grid.Row="4" Grid.Column="1"/>
+	</Grid>
+</Window>
